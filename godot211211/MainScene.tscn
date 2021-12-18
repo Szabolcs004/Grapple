@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Wall.tscn" type="PackedScene" id=1]
+[ext_resource path="res://FLoor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=3]
+
+[node name="MainScene" type="Spatial"]
+
+[node name="Map" type="Spatial" parent="."]
+
+[node name="StaticBody" parent="Map" instance=ExtResource( 2 )]
+
+[node name="StaticBody2" parent="Map" instance=ExtResource( 1 )]
+transform = Transform( 30, 0, 0, 0, -4.37114e-08, -15, 0, 1, -6.55671e-07, 0, 15, 29 )
+
+[node name="StaticBody3" parent="Map" instance=ExtResource( 1 )]
+transform = Transform( 30, 0, 0, 0, -4.37114e-08, -15, 0, 1, -6.55671e-07, 0, 15, -29 )
+
+[node name="StaticBody4" parent="Map" instance=ExtResource( 1 )]
+transform = Transform( -4.88762e-06, 1, -2.44381e-06, 0, -1.62921e-07, -15, -30, -1.62921e-07, 3.98147e-13, 29, 15, 0 )
+
+[node name="StaticBody5" parent="Map" instance=ExtResource( 1 )]
+transform = Transform( -4.88762e-06, 1, -2.44381e-06, 0, -1.62921e-07, -15, -30, -1.62921e-07, 3.98147e-13, -29, 15, 0 )
+
+[node name="StaticBody6" parent="Map" instance=ExtResource( 1 )]
+transform = Transform( 15, 0, 0, 0, 0.707107, 10.6066, 0, -0.707107, 10.6066, 0, 60, -29 )
+
+[node name="StaticBody7" parent="Map" instance=ExtResource( 1 )]
+transform = Transform( 15, 0, 0, 0, 0.707107, -10.6066, 0, 0.707107, 10.6066, 0, 60, 29 )
+
+[node name="StaticBody8" parent="Map" instance=ExtResource( 1 )]
+transform = Transform( 10.6066, -0.707107, 0, 10.6066, 0.707107, 0, 0, 0, 15, -29, 60, 0 )
+
+[node name="StaticBody9" parent="Map" instance=ExtResource( 1 )]
+transform = Transform( -2.44381e-06, 0.707107, 10.6066, 0, 0.707107, -10.6066, -15, -1.15202e-07, -1.72803e-06, 29, 60, 0 )
+
+[node name="StaticBody10" parent="Map" instance=ExtResource( 1 )]
+transform = Transform( 15, 0, 0, 0, 0.707107, -10.6066, 0, 0.707107, 10.6066, 0, 90, -29 )
+
+[node name="StaticBody11" parent="Map" instance=ExtResource( 2 )]
+transform = Transform( 30, 0, 0, 0, 1, 0, 0, 0, 30, 0, 82.121, 48.3592 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 68.6049, 0 )
